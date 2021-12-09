@@ -1,0 +1,30 @@
+.iphone-logo-h2{
+    width: 206px;
+    height: 60px;
+    object-fit: cover;
+}
+
+ul, ol{
+    display: flex;
+    justify-content: center;
+}
+
+.ul-modelos{
+    margin: 30px 0;
+}
+
+.modelos_card-img-top{
+    width: 180px;
+    height: 110px;
+    object-fit: contain;
+}
+
+.modelos_card{
+    width: 180px;
+    margin: 0 20px;
+}
+
+.en-desarrollo-img{
+    padding: 20px;
+    opacity: 40%;
+}

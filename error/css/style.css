@@ -1,0 +1,15 @@
+.card{
+    width: 70%;
+    margin-top: 20px;
+}
+
+.alert{
+    width: 70%;
+}
+
+.error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

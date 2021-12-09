@@ -1,0 +1,54 @@
+ul, ol{
+    display: flex;
+    justify-content: center;
+}
+
+.popular_card-text{
+    font-size: 10pt;
+    margin-bottom: 10px;
+}
+
+.popular_card-img-top{
+    width: 180px;
+    height: 110px;
+    object-fit: contain;
+}
+
+.popular_card{
+    width: 180px;
+    height: 305px;
+    margin: 0 20px;
+}
+
+.marcas_card{
+    width: 130px;
+    margin: 0 20px;
+}
+
+.marcas_card-img-top{
+    padding: 10px;
+    width: 130px;
+    height: 110px;
+    object-fit: contain;
+}
+
+.mas_vendidos_card-text{
+    font-size: 10pt;
+    margin-bottom: 10px;
+}
+
+.mas_vendidos_card-img-top{
+    width: 180px;
+    height: 110px;
+    object-fit: contain;
+}
+
+.mas_vendidos_card{
+    width: 180px;
+    height: 305px;
+    margin: 0 20px;
+}
+
+.en-desarrollo-img{
+    padding: 20px;
+}
