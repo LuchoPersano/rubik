@@ -1,23 +1,60 @@
-ul, ol{
+.cards-list{
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 }
 
-.popular_card-text{
+/*
+
+.popular_card:hover{
+    width: 185px;
+}
+
+.popular_card:hover p{
+    font-size: 10.3pt;
+}
+
+*/
+
+.popular_card-text, .mas_vendidos_card-text{
     font-size: 10pt;
     margin-bottom: 10px;
+    transition: .3s;
 }
 
-.popular_card-img-top{
+.popular_card-img-top, .mas_vendidos_card-img-top{
     width: 180px;
     height: 110px;
     object-fit: contain;
+    position: relative;
+    z-index: 200;
+    background: #fff;
 }
 
-.popular_card{
+.popular_card-body, .mas_vendidos_card-body{
+    padding: 5px 16px;
+    background: #fff;
+    position: relative;
+    z-index: 200;
+}
+
+.popular_card, .mas_vendidos_card{
     width: 180px;
-    height: 305px;
     margin: 0 20px;
+    transition: .3s;
+}
+
+.popular_card-details, .mas_vendidos_card-details{
+    position: relative;
+    margin-bottom: -60px;
+    top: -66px;
+    transition: .25s;
+    z-index: 80;
+}
+
+.card.popular_card:hover > .card-footer > .card-details, .card.mas_vendidos_card:hover > .card-footer > .card-details {
+    top: 0;
+    margin-bottom: 8px;
 }
 
 .marcas_card{
@@ -32,23 +69,18 @@ ul, ol{
     object-fit: contain;
 }
 
-.mas_vendidos_card-text{
-    font-size: 10pt;
-    margin-bottom: 10px;
-}
-
-.mas_vendidos_card-img-top{
-    width: 180px;
-    height: 110px;
-    object-fit: contain;
-}
-
-.mas_vendidos_card{
-    width: 180px;
-    height: 305px;
-    margin: 0 20px;
-}
-
 .en-desarrollo-img{
     padding: 20px;
+}
+
+.en-desarrollo_card, .en-desarrollo_card .card-footer, .en-desarrollo_card .card-body, .en-desarrollo_card .card-img-top {
+    background: #ffffff12;
+}
+
+.en-desarrollo_card > .card-footer > .btn:hover {
+    background: #ffffff4f;
+}
+
+.en-desarrollo_card > .card-footer > .btn {
+    background: #ffffff1f;
 }

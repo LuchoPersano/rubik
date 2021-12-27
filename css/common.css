@@ -1,69 +1,105 @@
-body{
-    background-color: rgb(50, 110, 190);
-    margin: 30px 10% 0 10%;
-    color: #000000;
-    font-family: 'Readex Pro', sans-serif;
-    text-align: center;
-}
-
-h1{
-    font-family: 'Teko', sans-serif;
-    font-size: 60pt;
-    font-weight: bold;
-    text-align: center;
-    color: #131313;
+.no-margin, .no-margin_padding{
     margin: 0;
 }
 
-.rubik-logo{
-    height: 96px;
+.no-padding, .no-margin_padding{
+    padding: 0;
 }
 
-.a-h1, .a-h1:hover{
+.no-decoration, .no-decoration:hover{
     text-emphasis: none;
     text-decoration: none;
-    color: #131313;
+    list-style: none;
+}
+
+.viejo{
+    display: none;
 }
 
 p{
     margin: 0;
 }
 
-.descripcion{
+
+body{
+    background-color: rgb(54, 123, 212);
+    color: #000000;
+    font-family: 'Readex Pro', sans-serif;
     text-align: center;
-    font-size: 10pt;
-    margin-bottom: 15px;
+    padding-top: 90px;
 }
 
-.descripcion-container{
-    margin-bottom: 30px;
-}
+/*HEADER*/
+    .header-logo-a, .header-logo-a:hover{
+        text-emphasis: none;
+        text-decoration: none;
+        color: #131313;
+        display: flex;
+        height: 100%;
+        align-items: center;
+    }
 
-nav{
-    text-align: center;
-    background-color: rgb(32, 83, 150);
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    header.v1-1{
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        height: 90px;
+        background-color: #205396;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 100000;
+    }
 
-nav div a{
-    text-emphasis: none;
-    color: black;
-}
+    .header-logo{
+        height: 90%;
+    }
 
-nav div a:hover{
-    color: black;
-}
+    .header-logo .rubik-logo{
+        height: 100%;
+    }
 
-.nav-flex-item{
-    padding: 10px 20px;
-}
+    .header-logo .titulo{
+        display: inline;
+        font-size: 60px;
+        font-family: 'Teko', sans-serif;
+        font-weight: bold;
+        color: #131313;
+        margin: 9px 0 0 0;
+    }
 
-.nav-flex-item:hover{
-    background-color: rgb(22, 59, 107);
-}
+
+    .nav-bar{
+        height: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 55px;
+    }
+
+    .nav-item p, .nav-item p:hover{
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    .nav-item p{
+        color: #131313;
+        white-space: nowrap;
+    }
+
+    div.nav-item{
+        padding: 5px 22px;
+    }
+
+    .nav-item{
+        transition: all .5s;
+    }
+
+    .nav-item:hover{
+        background-color: #1d4477;
+        color: #000;
+    }
 
 h2{
     font-family: 'Poppins', sans-serif;
@@ -105,9 +141,15 @@ h5{
     text-align: center;
 }
 
-section{
+.card{
+    box-shadow: 2px 2px 6px #0004;
+    border: none;
+}
+
+.main-section{
     text-align: center;
     margin: 30px 0;
+    padding: 0 10%;
 }
 
 p{
@@ -115,33 +157,12 @@ p{
     text-align: center;
 }
 
-footer{
-    background-color: rgb(35, 83, 145);
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 25px;
-    display: flex;
-    flex-direction: column;
-    height: 125px;
-    justify-content: space-around;
-}
-
-.redes{
-    font-size: 20px;
-    color: black;
-    margin: 0 5px;
-}
-
-.redes:hover{
-    color: black;
-}
-
 li{
     font-family: 'Readex Pro', sans-serif;
     text-align: center;
 }
 
-a{
+a, a:hover{
     color: rgb(0, 12, 66);
     text-decoration: underline;
 }
@@ -163,6 +184,158 @@ ul, ol{
     height: 35px;
 }
 
+/*FOOTER*/
+    .footer-web-info{
+        width: 40%;
+    }
+
+    .footer-versions-info, .footer-redes{
+        width: 30%;
+    }
+
+    footer{
+        background-color: rgb(35, 83, 145);
+        padding: 20px 10% 25px 10%;
+        display: flex;
+        border-top: 3px solid #1a4274;
+    }
+
+    .footer-logo-a,  .footer-logo-a:hover{
+        text-emphasis: none;
+        text-decoration: none;
+        color: #131313;
+    }
+
+    .footer-logo-container{
+        display: flex;
+        height: 45px;
+        align-items: center;
+    }
+
+    .footer-logo-img{
+        height: 100%;
+    }
+
+    .footer-logo-text{
+        display: inline;
+        font-size: 39px;
+        font-family: 'Teko', sans-serif;
+        font-weight: bold;
+        color: #131313;
+        margin: 7px 0 0 0;
+    }
+
+    .footer-text, .footer-link, .footer-list-item{
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .column1, .column2, .column3{
+        text-align: left;
+    }
+
+    h5.footer-title{
+        text-align: left;
+        margin-bottom: 18px;
+    }
+
+    .column1{
+        padding-right: 15px;
+    }
+    
+    .column1-text span::after{
+        content: " ";
+    }
+
+    .column3-link, .column3-link:hover{
+        color: #000;
+    }
+
+    .column3-link i{
+        margin-right: 5px;
+        position: relative;
+        font-size: 14px;
+        top: 2px;
+        border-radius: 4px;
+        transition: .3s;
+    }
+
+    .column3-list{
+        display: block;
+    }
+
+    .column3-list-item{
+        position: relative;
+        display: list-item;
+    }
+
+    .column3-list-item a{
+        position: relative;
+        z-index: 200;
+    }
+
+    .footer-ig:hover i{
+        background: linear-gradient(45deg, rgba(249,217,0,1) 0%, rgba(248,1,3,1) 40%, rgba(221,19,65,1) 60%, rgba(124,53,174,1) 100%);
+        color: #fff;
+        padding: 2px;
+        top: 1px;
+    }
+
+    .footer-ig:hover .footer-ig-fondo_blanco{
+        height: 17px;
+        width: 122px;
+        top: 2px;
+        z-index: 100;
+        opacity: 1;
+    }
+
+    .footer-ig-fondo_blanco{
+        height: 17px;
+        width: 17px;
+        background: #fff;
+        border-radius: 23px;
+        position: absolute;
+        top: 2px;
+        z-index: -1;
+        opacity: 0;
+        transition: .3s;
+    }
+
+    .footer-ig:hover{
+        margin-bottom: 5px;
+    }
+
+    .footer-ig{
+        transition: .3s;
+    }
+
+    .footer-mail:hover i{
+        background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(43,43,43,1) 100%);
+        color: #fff;
+        padding: 3px;
+        top: 1px;
+    }
+
+    .footer-mail:hover .footer-mail-fondo_blanco{
+        height: 17px;
+        width: 205px;
+        top: 2px;
+        z-index: 100;
+        opacity: 1;
+    }
+
+    .footer-mail-fondo_blanco{
+        height: 17px;
+        width: 17px;
+        background: #fff;
+        border-radius: 23px;
+        position: absolute;
+        top: 2px;
+        z-index: -1;
+        opacity: 0;
+        transition: .3s;
+    }
+    
 /*Estilo de páginas de celulares*/
 
 .img-celular{

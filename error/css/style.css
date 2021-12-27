@@ -7,9 +7,13 @@
     width: 70%;
 }
 
-.error{
+section.error{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+footer{
+    margin-top: 600px;
 }
